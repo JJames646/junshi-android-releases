@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/JJames646/junshi-android-releases/schemas/update.schema.json",
+  "title": "军师 Android 稳定版更新清单",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "channel",
+    "repository",
+    "latest",
+    "updatedAt"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "channel": {
+      "const": "stable"
+    },
+    "repository": {
+      "const": "JJames646/junshi-android-releases"
+    },
+    "latest": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "versionCode",
+            "versionName",
+            "minimumVersionCode",
+            "tag",
+            "downloadUrl",
+            "fileSize",
+            "sha256",
+            "releaseNotes",
+            "publishedAt"
+          ],
+          "properties": {
+            "versionCode": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "versionName": {
+              "type": "string",
+              "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+            },
+            "minimumVersionCode": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "tag": {
+              "type": "string",
+              "pattern": "^v[0-9]+\\.[0-9]+\\.[0-9]+$"
+            },
+            "downloadUrl": {
+              "type": "string",
+              "pattern": "^https://github\\.com/JJames646/junshi-android-releases/releases/download/"
+            },
+            "fileSize": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[a-fA-F0-9]{64}$"
+            },
+            "releaseNotes": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "publishedAt": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        }
+      ]
+    },
+    "updatedAt": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    }
+  }
+}
