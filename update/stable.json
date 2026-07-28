@@ -2,6 +2,20 @@
   "schemaVersion": 1,
   "channel": "stable",
   "repository": "JJames646/junshi-android-releases",
-  "latest": null,
-  "updatedAt": null
+  "latest": {
+    "versionName": "0.1.0",
+    "versionCode": 1,
+    "publishedAt": "2026-07-28T13:39:47.306Z",
+    "notes": [
+      "首个 Android 本地版，包含对话、资料库、测试和本机记忆。"
+    ],
+    "mandatory": false,
+    "minimumSupportedVersionCode": 1,
+    "apk": {
+      "url": "https://github.com/JJames646/junshi-android-releases/releases/download/v0.1.0/junshi-v0.1.0.apk",
+      "sha256": "fbfa81182f0c1e3790751157e06f33f5db965e2d6edcc2a8791af7680101408a",
+      "size": 10523380
+    }
+  },
+  "updatedAt": "2026-07-28T13:39:47.306Z"
 }
