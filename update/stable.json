@@ -3,19 +3,23 @@
   "channel": "stable",
   "repository": "JJames646/junshi-android-releases",
   "latest": {
-    "versionName": "0.1.0",
-    "versionCode": 1,
-    "publishedAt": "2026-07-28T13:39:47.306Z",
+    "versionName": "0.1.1",
+    "versionCode": 2,
+    "publishedAt": "2026-07-28T14:33:10.612Z",
     "notes": [
-      "首个 Android 本地版，包含对话、资料库、测试和本机记忆。"
+      "产品名称更新为“电源军师”，网页与 Android APP 保持一致。",
+      "新增首次注册/登录，本机账户仅保存加盐密码哈希，并按账户隔离本机资料。",
+      "修复聊天页输入框、底部导航、软键盘、长内容滚动和安全区裁切问题。",
+      "个人资料选择项改为统一自定义面板，不再调用廉价的系统长列表。",
+      "API 设置页适配手机完整高度，并加入联网记录与退出登录。"
     ],
     "mandatory": false,
     "minimumSupportedVersionCode": 1,
     "apk": {
-      "url": "https://github.com/JJames646/junshi-android-releases/releases/download/v0.1.0/junshi-v0.1.0.apk",
-      "sha256": "fbfa81182f0c1e3790751157e06f33f5db965e2d6edcc2a8791af7680101408a",
-      "size": 10523380
+      "url": "https://github.com/JJames646/junshi-android-releases/releases/download/v0.1.1/junshi-v0.1.1.apk",
+      "sha256": "c036b6e53b6c0d513b57fe97855230eb2c04bd19f412e2ee0399c78ff6f05132",
+      "size": 10530696
     }
   },
-  "updatedAt": "2026-07-28T13:39:47.306Z"
+  "updatedAt": "2026-07-28T14:33:10.613Z"
 }
