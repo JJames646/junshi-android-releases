@@ -3,23 +3,24 @@
   "channel": "stable",
   "repository": "JJames646/junshi-android-releases",
   "latest": {
-    "versionName": "0.1.1",
-    "versionCode": 2,
-    "publishedAt": "2026-07-28T14:33:10.612Z",
+    "versionName": "0.1.6",
+    "versionCode": 7,
+    "publishedAt": "2026-07-29T11:39:00.879Z",
     "notes": [
-      "产品名称更新为“电源军师”，网页与 Android APP 保持一致。",
-      "新增首次注册/登录，本机账户仅保存加盐密码哈希，并按账户隔离本机资料。",
-      "修复聊天页输入框、底部导航、软键盘、长内容滚动和安全区裁切问题。",
-      "个人资料选择项改为统一自定义面板，不再调用廉价的系统长列表。",
-      "API 设置页适配手机完整高度，并加入联网记录与退出登录。"
+      "移动端对话改为本次启动首次进入时新建，应用内切换页面后继续当前对话。",
+      "新增类似 ChatGPT 的移动端历史对话抽屉，并保留对话重命名、删除与关联文件清理。",
+      "新增 Android 系统语音转文字入口，直接调用手机语音识别服务。",
+      "API Key 改为保存在本机，并优化上游模型获取、接口错误提示和首页 AI 分析状态。",
+      "完善图片、PDF、Word 等资料导入与本地解析，狗头军师skill和童锦程skill继续内置。",
+      "修复手机端滚动、键盘遮挡、选择面板误触跳页以及多处尺寸和安全区适配问题。"
     ],
     "mandatory": false,
     "minimumSupportedVersionCode": 1,
     "apk": {
-      "url": "https://github.com/JJames646/junshi-android-releases/releases/download/v0.1.1/junshi-v0.1.1.apk",
-      "sha256": "c036b6e53b6c0d513b57fe97855230eb2c04bd19f412e2ee0399c78ff6f05132",
-      "size": 10530696
+      "url": "https://github.com/JJames646/junshi-android-releases/releases/download/v0.1.6/junshi-v0.1.6.apk",
+      "sha256": "ee7effc9f721006b8883aae7c25c70c70394701b58889121f70e292579815372",
+      "size": 11203605
     }
   },
-  "updatedAt": "2026-07-28T14:33:10.613Z"
+  "updatedAt": "2026-07-29T11:39:00.880Z"
 }
